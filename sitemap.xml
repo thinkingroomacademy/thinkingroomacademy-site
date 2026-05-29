@@ -11,4 +11,34 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://thinkingroomacademy.com/rooms/skills.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thinkingroomacademy.com/rooms/career.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thinkingroomacademy.com/rooms/business.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thinkingroomacademy.com/rooms/life.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thinkingroomacademy.com/rooms/frameworks.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thinkingroomacademy.com/updates/daily-log.html</loc>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

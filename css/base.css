@@ -1,0 +1,119 @@
+/* Global Resets & Base Typographic Layout */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth), border-color var(--transition-smooth);
+  padding: 0; /* Handled by header/footer padding in components */
+}
+
+/* Central Responsive Reading Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Typography Defaults - Modern Digital Clarity */
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-xs);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+/* Selective Serif Highlights for Academic Warmth */
+.serif-highlight {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.serif-quote {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--text-muted);
+  border-left: 2px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  line-height: 1.65;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Horizontal Rules as clean spacing breaks */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-xl) 0;
+}
+
+/* Media Queries for Typography */
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 1.85rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .serif-highlight {
+    font-size: 1.15rem;
+  }
+}

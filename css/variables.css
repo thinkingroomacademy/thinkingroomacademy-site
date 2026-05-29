@@ -1,0 +1,41 @@
+/* Design Tokens & Theme Variables */
+:root {
+  /* Typography */
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3.5rem;
+  --spacing-xxl: 7rem;
+
+  /* Layout Boundaries */
+  --max-width: 840px;
+
+  /* Light Theme - Warm Academic Paper */
+  --bg-primary: #fdfdfb;
+  --bg-secondary: #f6f3ed;
+  --text-primary: #1a1b1d;
+  --text-muted: #5e646e;
+  --accent-color: #1a365d;        /* Oxford Blue */
+  --accent-secondary: #881337;  /* Deep Burgundy */
+  --border-color: #e6e1da;
+  --border-hover: #1a1b1d;
+  
+  --transition-smooth: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme - Archival Carbon */
+  --bg-primary: #111215;
+  --bg-secondary: #17181c;
+  --text-primary: #eaf0f6;
+  --text-muted: #8d95a2;
+  --accent-color: #e2b13c;        /* Archival Sand Gold */
+  --accent-secondary: #fbbf24;  /* Muted Gold Accent */
+  --border-color: #272930;
+  --border-hover: #eaf0f6;
+}
