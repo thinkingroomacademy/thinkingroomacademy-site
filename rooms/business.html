@@ -125,9 +125,11 @@
           The Business Room explores systems thinking, ethical entrepreneurship, operational clarity, and long-term value creation.
         </p>
         <form class="intent-form community-form" id="form-room-business" action="#" method="POST" onsubmit="return validateForm(this);">
+          <input type="hidden" name="source" value="Website">
           <input type="hidden" name="room" value="Business">
           <input type="hidden" name="page" value="/rooms/business.html">
           <input type="hidden" name="status" value="New">
+          <input type="text" name="website_confirm" style="display:none !important" tabindex="-1" autocomplete="off">
           <div class="intent-input-group">
             <label class="intent-label" for="name-business">Your Name (Optional)</label>
             <input type="text" id="name-business" name="name" class="intent-input" placeholder="Your name">

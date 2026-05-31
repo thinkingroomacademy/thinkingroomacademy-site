@@ -125,9 +125,11 @@
           The Frameworks Room helps learners develop structured thinking through mental models, first principles reasoning, systems thinking, and analytical frameworks.
         </p>
         <form class="intent-form community-form" id="form-room-frameworks" action="#" method="POST" onsubmit="return validateForm(this);">
+          <input type="hidden" name="source" value="Website">
           <input type="hidden" name="room" value="Frameworks">
           <input type="hidden" name="page" value="/rooms/frameworks.html">
           <input type="hidden" name="status" value="New">
+          <input type="text" name="website_confirm" style="display:none !important" tabindex="-1" autocomplete="off">
           <div class="intent-input-group">
             <label class="intent-label" for="name-frameworks">Your Name (Optional)</label>
             <input type="text" id="name-frameworks" name="name" class="intent-input" placeholder="Your name">

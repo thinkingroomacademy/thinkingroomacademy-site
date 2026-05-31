@@ -125,9 +125,11 @@
           The future belongs to people who can learn independently, think clearly, communicate effectively, and adapt continuously.
         </p>
         <form class="intent-form community-form" id="form-room-skills" action="#" method="POST" onsubmit="return validateForm(this);">
+          <input type="hidden" name="source" value="Website">
           <input type="hidden" name="room" value="Skills">
           <input type="hidden" name="page" value="/rooms/skills.html">
           <input type="hidden" name="status" value="New">
+          <input type="text" name="website_confirm" style="display:none !important" tabindex="-1" autocomplete="off">
           <div class="intent-input-group">
             <label class="intent-label" for="name-skills">Your Name (Optional)</label>
             <input type="text" id="name-skills" name="name" class="intent-input" placeholder="Your name">

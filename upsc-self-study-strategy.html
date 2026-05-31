@@ -163,9 +163,11 @@
           Join the Thinking Room for structured guidance, frameworks, disciplined self-learning systems, and calm long-term preparation.
         </p>
         <form class="intent-form community-form" id="form-room-upsc" action="#" method="POST" onsubmit="return validateForm(this);">
+          <input type="hidden" name="source" value="Website">
           <input type="hidden" name="room" value="UPSC">
           <input type="hidden" name="page" value="/upsc-self-study-strategy.html">
           <input type="hidden" name="status" value="New">
+          <input type="text" name="website_confirm" style="display:none !important" tabindex="-1" autocomplete="off">
           <div class="intent-input-group">
             <label class="intent-label" for="name-upsc">Your Name (Optional)</label>
             <input type="text" id="name-upsc" name="name" class="intent-input" placeholder="Your name">
