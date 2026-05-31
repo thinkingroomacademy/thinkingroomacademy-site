@@ -20,7 +20,7 @@ function updateThemeButtonText(theme) {
 }
 
 // Centralized Web App Script URL (Set this to your deployed Apps Script URL)
-const GOOGLE_APP_SCRIPT_URL = "YOUR_DEPLOYED_WEB_APP_URL_HERE";
+const GOOGLE_APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzR9ofFNftImKd1pI-1-SS4YlGH9S5sL_canPLmn_zVRaxb9Eq6eTS4ICGe6Vk5fQn3lw/exec";
 
 function validateForm(form) {
   const name = form.name ? form.name.value.trim() : '';
