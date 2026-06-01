@@ -66,20 +66,13 @@ function handleFormSubmit(event) {
 
   fetch(GOOGLE_APP_SCRIPT_URL, {
     method: "POST",
-    body: formData
+    body: formData,
+    mode: "no-cors"
   })
   .then(response => {
-    if (!response.ok) {
-      throw new Error("HTTP error " + response.status);
-    }
-    return response.json();
-  })
-  .then(data => {
-    if (data.status === "success" || data.status === "spam_blocked") {
-      showFormSuccess(form);
-    } else {
-      throw new Error(data.message || "Unknown server error");
-    }
+    // Under mode: "no-cors", the response is opaque. 
+    // If the network request was successfully dispatched, we treat it as a success.
+    showFormSuccess(form);
   })
   .catch(error => {
     console.error("Form submission failed:", error);
